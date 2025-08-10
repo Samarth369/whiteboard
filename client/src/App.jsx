@@ -3,6 +3,7 @@ import '../styles/App.css'
 import { BrowserRouter , Routes , Route } from "react-router-dom"
 
 // Pages
+import Home from '../Pages/Home'
 import Auth from '../Pages/Auth'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/auth' element={<Auth />} />
+        <Route path='/' element={<Home />} />
       </Routes>
       </BrowserRouter>
     </>
