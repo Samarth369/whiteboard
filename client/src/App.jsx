@@ -5,6 +5,7 @@ import { BrowserRouter , Routes , Route } from "react-router-dom"
 // Pages
 import Home from '../Pages/Home'
 import Auth from '../Pages/Auth'
+import Canvas from '../Pages/Canvas'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,8 +14,9 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-        <Route path='/auth' element={<Auth />} />
         <Route path='/' element={<Home />} />
+        <Route path='/auth' element={<Auth />} />
+        <Route path='/canvas' element={<Canvas />} />
       </Routes>
       </BrowserRouter>
     </>
